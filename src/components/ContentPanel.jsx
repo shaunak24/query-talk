@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import { styles } from '../styles';
 import { Panel } from './';
+import { switchImg } from '../assets';
 
 const ContentPanel = () => {
   const [leftPanelText, setLeftPanelText] = useState('');
   const [rightPanelText, setRightPanelText] = useState('');
 
+  const handleModeSwitch = () => {};
+
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} absolute flex sm:flex-row flex-col inset-0 top-[120px] max-w-screen-2xl mx-auto items-center gap-24`}
+        className={`${styles.paddingX} absolute flex sm:flex-row flex-col inset-0 top-[120px] max-w-screen-2xl mx-auto items-center sm:gap-24 gap-8`}
       >
         {/* Left Panel */}
         <Panel
@@ -18,6 +21,13 @@ const ContentPanel = () => {
           text={leftPanelText}
           setText={setLeftPanelText}
           placeholder="eg. SQL..."
+        />
+
+        <img
+          src={switchImg}
+          alt="Switch mode"
+          onClick={handleModeSwitch}
+          className="cursor-pointer"
         />
 
         {/* Right Panel */}
