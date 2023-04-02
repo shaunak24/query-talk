@@ -3,9 +3,9 @@ import { copy } from '../assets';
 
 const Panel = ({ label, name, placeholder, text, setText }) => {
   return (
-    <div className="w-full bg-orange-100 p-4 rounded-lg">
+    <div className="w-full bg-orange-100 p-4 rounded-lg shadow-2xl">
       <label className="flex flex-col">
-        <span className="font-medium mb-4 text-secondary">{label}</span>
+        <span className="font-bold mb-4 text-secondary">{label}</span>
         <textarea
           rows="7"
           name={name}
