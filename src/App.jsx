@@ -4,7 +4,7 @@ import { Navbar, ContentPanel } from './components';
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-hero-pattern bg-cover bg-no-repeat bg-center">
+      <div className="relative z-0 bg-panel-pattern bg-cover bg-no-repeat bg-center">
         <Navbar />
         <ContentPanel />
       </div>

@@ -14,7 +14,7 @@ module.exports = {
         xs: '450px',
       },
       backgroundImage: {
-        'hero-pattern': "url('/src/assets/panelbg.jpeg')",
+        'panel-pattern': "url('/src/assets/panelbg.jpeg')",
       },
     },
   },
