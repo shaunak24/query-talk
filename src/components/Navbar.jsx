@@ -24,7 +24,7 @@ const Navbar = () => {
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <Link to={link.linkTo} key={link.id}>
-              <li className="text-black hover:text-primary text-[18px] cursor-pointer font-medium">
+              <li className="text-secondary hover:text-primary text-[18px] cursor-pointer font-medium">
                 {link.name}
               </li>
             </Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
           <div
             className={`${
               menuOpen ? 'flex' : 'hidden'
-            } p-6 absolute top-20 right-0 mx-4 my-8 min-w-[140px] z-10 rounded-xl bg-primary text-white`}
+            } p-6 absolute top-20 right-0 mx-4 my-8 min-w-[140px] z-10 rounded-xl bg-primary text-secondary`}
           >
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map((link) => (
