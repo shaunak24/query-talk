@@ -9,9 +9,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center fixed top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} mt-4 w-full flex items-center fixed top-0 z-20`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="w-full flex justify-between items-center mx-auto">
         <Link
           className="flex gap-2 items-center"
           to="/"
@@ -19,12 +19,12 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-52 h-24 object-contain" />
+          <img src={logo} alt="logo" className="w-44 h-24 object-contain" />
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <Link to={link.linkTo} key={link.id}>
-              <li className="text-white hover:text-white text-[18px] cursor-pointer font-medium">
+              <li className="text-black hover:text-primary text-[18px] cursor-pointer font-medium">
                 {link.name}
               </li>
             </Link>
