@@ -1,6 +1,6 @@
 ## QueryTalk
 
-![alt text](https://github.com/shaunak24/query-talk/blob/main/home_screen.png?raw=true)
+![alt text](https://github.com/shaunak24/query-talk/blob/main/docs/home_screen.png?raw=true)
 
 Welcome to QueryTalk! We are passionate about making data analysis more accessible to everyone. QueryTalk is a powerful tool that helps you generate SQL queries using natural language and vice versa.
 
