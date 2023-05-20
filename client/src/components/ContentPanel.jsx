@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { styles } from '../styles';
 import { Panel } from './';
 import { switchImg } from '../assets';
@@ -8,6 +8,24 @@ const ContentPanel = () => {
   const [rightPanelText, setRightPanelText] = useState('');
 
   const handleModeSwitch = () => {};
+
+  const getData = async () => {
+    const response = await fetch('http://localhost:8080/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: {
+        prompt: 'Hi!',
+      },
+    });
+    return response;
+  };
+
+  useEffect(() => {
+    // const data = getData();
+    // console.log(data);
+  }, []);
 
   return (
     <section className="relative w-full h-screen mx-auto">
