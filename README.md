@@ -1,5 +1,7 @@
 ## QueryTalk
 
+![alt text](https://github.com/shaunak24/query-talk/blob/main/home_screen.png?raw=true)
+
 Welcome to QueryTalk! We are passionate about making data analysis more accessible to everyone. QueryTalk is a powerful tool that helps you generate SQL queries using natural language and vice versa.
 
 With QueryTalk, you can easily and quickly generate SQL queries even if you're not a developer. QueryTalk also helps developers understand big SQL queries and learn SQL, making it a valuable tool for both technical and non-technical users.
